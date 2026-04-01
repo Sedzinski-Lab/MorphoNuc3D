@@ -1,0 +1,9 @@
+{
+  "read_dir": "DATA/eGFP-LaminB3",
+  "anno_suffix": "_anno.tif",
+  "n_points": 1024,
+  "min_voxels": 100,
+  "smooth": false,
+  "smooth_sigma_um": 0.1,
+  "note": "Optional: voxel_size_um = [0.3, 0.1, 0.1]"
+}

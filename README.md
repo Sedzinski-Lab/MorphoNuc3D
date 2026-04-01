@@ -54,8 +54,10 @@ Predict:
 
 ## Point Cloud
 
+## Point Cloud
+
 ```bash
-python scripts/pointcloud.py --read_dir DATA/ --save_dir DATA/
+python scripts/pointcloud.py --config configs/pointcloud.json
 ```
 
 ## Notes
