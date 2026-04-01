@@ -1,0 +1,10 @@
+{
+  "data_root": "DATA/260330_ID479_laminB3",
+  "glob": "*.czi",
+  "skip_stems": ["settings"],
+  "channel": 2,
+  "model_name": "n2v_nuclei_3d_all",
+  "model_mode": "3d",
+  "layout": [0, 0, "channel", 0, "z", "y", "x", 0],
+  "n_tiles_3d": [2, 4, 4, 1]
+}

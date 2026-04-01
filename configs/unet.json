@@ -1,0 +1,11 @@
+{
+  "data_root": "DATA/eGFP-LaminB3",
+  "image_suffix": "_n2v_3d.tif",
+  "mask_suffix": "_anno.tif",
+  "model_dir": "models",
+  "model_name": "unet3d_nuclei",
+  "patch_size": [32, 256, 256],
+  "batch_size": 2,
+  "patches_per_vol": 20,
+  "val_fraction": 0.2
+}
