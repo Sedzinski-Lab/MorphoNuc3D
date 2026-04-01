@@ -1,4 +1,4 @@
-# Tube
+# MorphoNuc3D
 
 Microscopy scripts for:
 - Noise2Void denoising
