@@ -97,7 +97,9 @@ def main():
     mask_suffix = args.mask_suffix or config["mask_suffix"]
     model_dir = Path(args.model_dir or config["model_dir"])
     model_name = args.model_name or config["model_name"]
-    pretrained_model = args.pretrained_model or config["pretrained_model"]
+    pretrained_model = args.pretrained_model or config.get("pretrained_model")
+    if pretrained_model is None:
+        pretrained_model = "cpsam"
     epochs = args.epochs if args.epochs is not None else int(config["epochs"])
     learning_rate = args.learning_rate if args.learning_rate is not None else float(config["learning_rate"])
     weight_decay = args.weight_decay if args.weight_decay is not None else float(config["weight_decay"])
@@ -127,7 +129,7 @@ def main():
     print(f"batch size      : {batch_size}")
     print(f"learning rate   : {learning_rate}")
 
-    model = models.CellposeModel(gpu=args.gpu, pretrained_model=pretrained_model)
+    model = models.CellposeModel(gpu=gpu, pretrained_model=pretrained_model)
 
     new_model_path, train_losses, test_losses = train.train_seg(
         model.net,
