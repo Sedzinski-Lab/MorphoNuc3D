@@ -37,7 +37,7 @@ python scripts/predict_n2v.py --config configs/id479_n2v.json
 Fine-tune from `*_n2v_3d.tif` and `*_anno.tif`:
 
 ```bash
-python scripts/finetune_cellpose.py --data_root "DATA/" --gpu
+python scripts/finetune_cellpose.py --config configs/finetune_cellpose.json
 ```
 
 ## 3D U-Net
